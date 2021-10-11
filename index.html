@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47cde46daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Bhromaon</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="logo-text">Bhromaon</h1>
+                <h3 class="slogan">Safe Travel Anywhere</h3>
+            </div>
+            <form class="form" action="">
+                <input class="form__input" type="search" name="search" maxlength="30" placeholder="Search Your Travel Dstination">
+                <button class="form__button " type="submit">Search <i class="fas fa-search search"></i></button>
+            </form>
+            <a class="scroll-link" href="#">Scroll down <i class="fas fa-angle-down"></i></a>
+        </div>
+        <nav class="nav">
+            <div class="nav__container"  id="nav-bar">
+            <a href="#"><img class="nav__logo" src="images/Bhromaon-logo.svg" alt="Bhromaon logo"></a>
+            <ul class="nav__list">
+                <li>
+                    <a class="nav__link" href="#">Who we are</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="#">What we do</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="#">Travel with us</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="#">Contact us</a>
+                </li>
+            </ul>
+            <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <script>
+            function burgerMenu() {
+                let burger = document.getElementById("nav-bar");
+                if (burger.className === "nav") {
+                burger.className += " responsive";
+                } else {
+                burger.className = "nav";
+                }
+            }
+            </script>
+    </header>
+    
+    <main>
+        <section class="why-us">
+            <div class="why-us__container">
+                <div class="why-us__info">
+                    <h2 class="title--large">Why Choose Us</h2>
+                    <p class="text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of 
+                    pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+                    <p class="text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
+                    so blinded by desire, that.</p>
+                    <button class="button">Explore places</button>
+                </div>
+                <div class="why-us__images">
+                    <img class="why-us__image" src="images/Image1.png" alt="building by a lake">
+                    <img class="why-us__image--right" src="images/Image2.png" alt="mountain scenery">
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="process__graphics">
+                <img class="arches" src="images/arches.svg" alt="arches connecting graphics">
+                <div class="graphics__container">
+                    <img class="process__image" src="images/search.svg" alt="magnifying glass graphic">
+                    <img class="process__image" src="images/select.svg" alt="check in circle graphic">
+                    <img class="process__image" src="images/book.svg" alt="thumbs up graphic">
+                </div>
+                <div class="process__text-container">
+                    <h3 class="process__text">Search Places</h3>
+                    <h3 class="process__text">Select Places</h3>
+                    <h3 class="process__text">Book & Enjoy</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination1">
+            <div class="destination__container1">
+                <div class="destination__content">
+                    <h5 class="title--small">Spain</h5>
+                    <h4 class="title--medium">Grand Spain Madrid</h4>
+                    <p class="text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                    praising pain was account  born and I account will give you a complete account of the system</p>
+                    <button class="button">Book now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination2">
+            <div class="destination__container2">
+                <div class="destination__content">
+                    <h5 class="title--small">Spain</h5>
+                    <h4 class="title--medium">Grand Spain Madrid</h4>
+                    <p class="text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                    praising pain was account  born and I account will give you a complete account of the system</p>
+                    <button class="button">Book now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <h2 class="title--large">What our tourist say</h2>
+            <div class="testimonial__content">
+                <img class="testimonial__image" src="images/Image3.png" alt="mountain landscape with person in foreground">
+                <div class="testimonial__text">
+                    <h4 class="title--medium">Sam Sumon</h4>
+                    <p class="text"><i class="fas fa-quote-left quote"></i>But I must explain to you how all this mistaken idea of account 
+                    to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of 
+                    account to nai denouncing pleasure and praising pain was account  born and I account will give you 
+                    a complete account of the system was account  born and I account will give you a nai the complete 
+                    account of the system</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__logo" src="images/logo-w-slogan.svg" alt="Bhromaon logo">
+        <div class="social-media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in icon--blue"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest"></i>
+        </div>
+    </footer>
+
+</body>
+</html>

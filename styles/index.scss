@@ -1,0 +1,101 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title--large {
+    padding-bottom: 2%;
+    font-family: $aleo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    color: $white;
+}
+
+.title--medium {
+    font-family: $josefin;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.title--small {
+    padding-bottom: 2%;
+    font-family: $josefin;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    color: $off-white;
+}
+
+.text {
+    padding: 2% 0 6% 0;
+    font-family: $josefin;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    color: $off-white;
+}
+
+.button {
+    width: 228px;
+    height: 63px;
+    background-color: $blue;
+    border: none;
+    font-family: $aleo;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.button:hover {
+    background-color: rgb(36, 74, 243);
+    transition: 1s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .title--large{
+        padding: 2% 0;
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .button {
+        width: 150px;
+    }
+}
+
+@import 'header';
+@import 'why-us';
+@import 'process';
+@import 'destination1';
+@import 'destination2';
+@import 'testimonial';
+@import 'footer';

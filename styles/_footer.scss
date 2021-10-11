@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    min-height: 271px;
+    background-color: $gray;
+    @include center-content;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 25%;
+    padding: 2% 0;
+}
+
+.social-media {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: $white;
+}
+
+.icon--blue {
+    color: $blue;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__logo {
+        width: 40%;
+    }
+
+    .social-media {
+        width: 40%;
+    }
+}
